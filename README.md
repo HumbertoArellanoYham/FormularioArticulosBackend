@@ -2,4 +2,3 @@
 ## Technologies
  * Java
  * Spring Framework
- * 
