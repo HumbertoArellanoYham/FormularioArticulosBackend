@@ -1,1 +1,5 @@
-# CoppelTestBackend
+# Coppel Test Backend
+## Technologies
+ * Java
+ * Spring Framework
+ * 
