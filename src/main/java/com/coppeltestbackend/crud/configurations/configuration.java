@@ -8,9 +8,13 @@ import org.springframework.data.redis.cache.RedisCacheConfiguration;
 import org.springframework.data.redis.cache.RedisCacheManager;
 import org.springframework.data.redis.connection.RedisConnectionFactory;
 import org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
-public class configuration {
+@EnableWebMvc
+public class configuration implements WebMvcConfigurer{
     // Redis cache 
     @Bean
     RedisConnectionFactory redisConnectionFactory() {
@@ -28,4 +32,15 @@ public class configuration {
             .cacheDefaults(defaults)
             .build();
     }
-}
+
+    // Cors Configuration
+    @Bean
+    public WebMvcConfigurer corsConfigurer() {
+        return new WebMvcConfigurer() {
+            @Override
+            public void addCorsMappings(CorsRegistry registry) {;
+                registry.addMapping("/**");
+            }
+       };
+     }
+ }
