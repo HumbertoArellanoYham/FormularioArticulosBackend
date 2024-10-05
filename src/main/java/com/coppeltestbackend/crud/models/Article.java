@@ -3,11 +3,13 @@ package com.coppeltestbackend.crud.models;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
+import jakarta.persistence.Table;
 import org.springframework.data.annotation.Id;
 
 import java.util.Date;
 
 @Entity
+@Table(name = "articulo")
 public class Article {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
