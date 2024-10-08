@@ -1,18 +1,16 @@
 package com.coppeltestbackend.crud.models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Table;
-import org.springframework.data.annotation.Id;
+import jakarta.persistence.*;
 
 import java.util.Date;
 
 @Entity
 @Table(name = "articulo")
+@Access(value = AccessType.FIELD)
 public class Article {
     @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    @Column(name="sku")
     private Integer sku;
 
     private String nombre;
@@ -26,10 +24,6 @@ public class Article {
     private Integer cantidad;
     private Integer descontinuado;
     private Date fecha_baja;
-
-    public Article(){
-
-    }
 
     // Getters and setters
 
