@@ -8,10 +8,11 @@ import org.springframework.data.redis.cache.RedisCacheConfiguration;
 import org.springframework.data.redis.cache.RedisCacheManager;
 import org.springframework.data.redis.connection.RedisConnectionFactory;
 import org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory;
-import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+
+import com.coppeltestbackend.crud.models.MultiplesFamilias;
 
 @Configuration
 @EnableWebMvc
@@ -40,9 +41,14 @@ public class configuration implements WebMvcConfigurer{
     public WebMvcConfigurer corsConfigurer() {
         return new WebMvcConfigurer() {
             @Override
-            public void addCorsMappings(CorsRegistry registry) {;
+            public void addCorsMappings(@SuppressWarnings("null") CorsRegistry registry) {;
                 registry.addMapping("/**");
             }
        };
+     }
+
+     @Bean
+     public MultiplesFamilias multiplesFamilias(){
+        return new MultiplesFamilias();
      }
  }

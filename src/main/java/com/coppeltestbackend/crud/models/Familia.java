@@ -1,43 +1,58 @@
 package com.coppeltestbackend.crud.models;
 
-import jakarta.persistence.Column;
+
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
-@Entity
-@Table(name = "Familia")
-public class Familia {
-    @Id
-    @Column(name = "id_familia")
-    private Integer id;
 
-    @Column(name= "nombre_familia")
-    private String name;
+@Entity
+@Table(name = "familia")
+public class Familia {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id_familia;
+
+    private String nombre_familia;
+
+    private Integer num_familia;
+
+
+    public Familia(){}
 
     // Getters and setters
 
-    public Integer getId() {
-        return id;
+    public Integer getId_familia() {
+        return id_familia;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setId_familia(Integer id_familia) {
+        this.id_familia = id_familia;
     }
 
-    public String getName() {
-        return name;
+    public String getNombre_familia() {
+        return nombre_familia;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setNombre_familia(String nombre_familia) {
+        this.nombre_familia = nombre_familia;
     }
 
-    @Override
-    public String toString() {
-        return "Familia{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                '}';
+    public Integer getNum_familia() {
+        return num_familia;
     }
+
+    public void setNum_familia(Integer num_familia) {
+        this.num_familia = num_familia;
+    }
+   
+    // @Override
+    // public String toString() {
+    // return "Familia [id_familia=" + id_familia + ", nombre_familia=" + nombre_familia + ", num_familia=" + num_familia
+    //         + "]";
+    // } 
+
 }
