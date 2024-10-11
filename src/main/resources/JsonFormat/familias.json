@@ -1,0 +1,160 @@
+{
+  "familias": [
+    {
+      "name": "SIN NOMBRE",
+      "numeroFamilia": "00"
+    },
+    {
+      "name": "LICUADORAS",
+      "numeroFamilia": "01"
+    },
+    {
+      "name": "EXCLUSIVO COPPEL.COM",
+      "numeroFamilia": "01"
+    },
+    {
+      "name": "BATIDORA MANUAL",
+      "numeroFamilia": "01"
+    },
+    {
+      "name": "PROCESADOR",
+      "numeroFamilia": "02"
+    },
+    {
+      "name": "PICADORA",
+      "numeroFamilia": "02"
+    },
+    {
+      "name": "BATIDORA PEDESTAL",
+      "numeroFamilia": "03"
+    },
+    {
+      "name": "BATIDORA FUENTE DE SODA",
+      "numeroFamilia": "03"
+    },
+    {
+      "name": "MULTIPRACTICOS",
+      "numeroFamilia": "04"
+    },
+    {
+      "name": "EXCLUSIVOS COPPEL.COM",
+      "numeroFamilia": "07"
+    },
+    {
+      "name": "CAFETERAS",
+      "numeroFamilia": "01"
+    },
+    {
+      "name": "PERCOLADORAS",
+      "numeroFamilia": "02"
+    },
+    {
+      "name": "AMPLIFICADOR/RECEPTOR",
+      "numeroFamilia": "03"
+    },
+    {
+      "name": "KIT DE INSTALACION",
+      "numeroFamilia": "04"
+    },
+    {
+      "name": "AMPLIFICADORES COPPEL",
+      "numeroFamilia": "05"
+    },
+    {
+      "name": "AUTOSTEREO CD C/BOCINA",
+      "numeroFamilia": "06"
+    },
+    {
+      "name": "ACCESORIOS CAR AUDIO",
+      "numeroFamilia": "07"
+    },
+    {
+      "name": "AMPLIFICADOR",
+      "numeroFamilia": "03"
+    },
+    {
+      "name": "ALARMA AUTO/CASA/OFICINA",
+      "numeroFamilia": "04"
+    },
+    {
+      "name": "SIN MECANISMO",
+      "numeroFamilia": "05"
+    },
+    {
+      "name": "CON CD",
+      "numeroFamilia": "06"
+    },
+    {
+      "name": "MULTIMEDIA",
+      "numeroFamilia": "07"
+    },
+    {
+      "name": "PAQUETE SIN MECANISMO",
+      "numeroFamilia": "08"
+    },
+    {
+      "name": "PAQUETE CON CD",
+      "numeroFamilia": "09"
+    },
+    {
+      "name": "PILLOW TOP KS",
+      "numeroFamilia": "01"
+    },
+    {
+      "name": "PILLOW TOP DOBLE KS",
+      "numeroFamilia": "02"
+    },
+    {
+      "name": "HULE ESPUMA KS",
+      "numeroFamilia": "03"
+    },
+    {
+      "name": "ESTANDAR INDIVIDUAL",
+      "numeroFamilia": "01"
+    },
+    {
+      "name": "PILLOW TOP INDIVIDUAL",
+      "numeroFamilia": "02"
+    },
+    {
+      "name": "PILLOW TOP DOBLE INDIVIDUAL",
+      "numeroFamilia": "03"
+    },
+    {
+      "name": "ESQUINERAS SUPERIORES",
+      "numeroFamilia": "01"
+    },
+    {
+      "name": "TIPO L SECCIONAL",
+      "numeroFamilia": "02"
+    },
+    {
+      "name": "SILLON OCASIONAL",
+      "numeroFamilia": "03"
+    },
+    {
+      "name": "PUFF",
+      "numeroFamilia": "01"
+    },
+    {
+      "name": "BAUL",
+      "numeroFamilia": "02"
+    },
+    {
+      "name": "TABURETE",
+      "numeroFamilia": "03"
+    },
+    {
+      "name": "SOFA CAMA TAPIZADO COPPEL",
+      "numeroFamilia": "01"
+    },
+    {
+      "name": "SOFACAMA CLASICO",
+      "numeroFamilia": "02"
+    },
+    {
+      "name": "ESTUDIO",
+      "numeroFamilia": "03"
+    }
+  ]
+}

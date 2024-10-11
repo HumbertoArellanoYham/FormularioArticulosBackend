@@ -2,15 +2,24 @@ package com.coppeltestbackend.crud.configurations;
 
 import java.time.Duration;
 
+import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.redis.cache.RedisCacheConfiguration;
 import org.springframework.data.redis.cache.RedisCacheManager;
 import org.springframework.data.redis.connection.RedisConnectionFactory;
 import org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+
+import com.coppeltestbackend.crud.models.MultiplesFamilias;
 
 @Configuration
-public class configuration {
+@EnableWebMvc
+@EnableCaching
+public class configuration implements WebMvcConfigurer{
+
     // Redis cache 
     @Bean
     RedisConnectionFactory redisConnectionFactory() {
@@ -28,4 +37,20 @@ public class configuration {
             .cacheDefaults(defaults)
             .build();
     }
-}
+
+    // Cors Configuration
+    @Bean
+    public WebMvcConfigurer corsConfigurer() {
+        return new WebMvcConfigurer() {
+            @Override
+            public void addCorsMappings(@SuppressWarnings("null") CorsRegistry registry) {;
+                registry.addMapping("/**");
+            }
+       };
+     }
+
+     @Bean
+     public MultiplesFamilias multiplesFamilias(){
+        return new MultiplesFamilias();
+     }
+ }
