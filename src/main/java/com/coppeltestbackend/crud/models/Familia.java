@@ -1,6 +1,8 @@
 package com.coppeltestbackend.crud.models;
 
 
+import java.io.Serializable;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -10,7 +12,9 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "familia")
-public class Familia {
+public class Familia implements Serializable {
+
+    private static final long serialVersionUID = -8885817712041252438L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -49,10 +53,10 @@ public class Familia {
         this.num_familia = num_familia;
     }
    
-    // @Override
-    // public String toString() {
-    // return "Familia [id_familia=" + id_familia + ", nombre_familia=" + nombre_familia + ", num_familia=" + num_familia
-    //         + "]";
-    // } 
+    @Override
+    public String toString() {
+    return "Familia [id_familia=" + id_familia + ", nombre_familia=" + nombre_familia + ", num_familia=" + num_familia
+            + "]";
+    } 
 
 }

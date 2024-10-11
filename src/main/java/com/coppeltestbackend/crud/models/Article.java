@@ -25,6 +25,8 @@ public class Article {
     private Integer descontinuado;
     private Date fecha_baja;
 
+    public Article(){}
+
     // Getters and setters
 
     public Integer getSku() {

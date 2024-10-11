@@ -1,14 +1,12 @@
 package com.coppeltestbackend.crud.services;
 
-import org.apache.el.stream.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.annotation.ReadOnlyProperty;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.coppeltestbackend.crud.models.Familia;
 import com.coppeltestbackend.crud.repositories.FamiliaRepository;
-
-import jakarta.transaction.Transactional;
 
 @Service
 public class FamiliaServicesImpl {
@@ -20,8 +18,8 @@ public class FamiliaServicesImpl {
         familiaRepository = repositoryFamilia;
     }
 
-    @Transactional()
-    @ReadOnlyProperty()
+    @Cacheable(value="findAll")
+    @Transactional(readOnly = true)
     public Iterable<Familia> findAll(){
         Iterable<Familia> result = familiaRepository.findAll();
 

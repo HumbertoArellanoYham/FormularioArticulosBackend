@@ -4,10 +4,11 @@ import java.util.List;
 
 import org.springframework.stereotype.Component;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 @Component
-public class MultiplesFamilias {
+public class MultiplesFamilias implements Serializable {
     private List<Familia> familias;
 
     public MultiplesFamilias(){

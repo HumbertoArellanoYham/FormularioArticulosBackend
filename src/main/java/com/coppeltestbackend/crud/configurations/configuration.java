@@ -2,6 +2,7 @@ package com.coppeltestbackend.crud.configurations;
 
 import java.time.Duration;
 
+import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.redis.cache.RedisCacheConfiguration;
@@ -16,6 +17,7 @@ import com.coppeltestbackend.crud.models.MultiplesFamilias;
 
 @Configuration
 @EnableWebMvc
+@EnableCaching
 public class configuration implements WebMvcConfigurer{
 
     // Redis cache 
