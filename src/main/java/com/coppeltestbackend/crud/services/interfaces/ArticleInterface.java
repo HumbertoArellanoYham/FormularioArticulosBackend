@@ -1,4 +1,4 @@
-package com.coppeltestbackend.crud.services;
+package com.coppeltestbackend.crud.services.interfaces;
 
 import org.springframework.stereotype.Service;
 
@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public interface ArticleServices<T> {
+public interface ArticleInterface<T> {
      List<T> findAll();
 
      Optional<T> findBySku(Integer sku);

@@ -1,160 +1,199 @@
 {
   "familias": [
     {
-      "name": "SIN NOMBRE",
-      "numeroFamilia": "00"
+      "id_familia": 3,
+      "nombre_familia": "SIN NOMBRE",
+      "num_familia": 0
     },
     {
-      "name": "LICUADORAS",
-      "numeroFamilia": "01"
+      "id_familia": 4,
+      "nombre_familia": "LICUADORAS",
+      "num_familia": 1
     },
     {
-      "name": "EXCLUSIVO COPPEL.COM",
-      "numeroFamilia": "01"
+      "id_familia": 5,
+      "nombre_familia": "EXCLUSIVO COPPEL.COM",
+      "num_familia": 1
     },
     {
-      "name": "BATIDORA MANUAL",
-      "numeroFamilia": "01"
+      "id_familia": 6,
+      "nombre_familia": "BATIDORA MANUAL",
+      "num_familia": 1
     },
     {
-      "name": "PROCESADOR",
-      "numeroFamilia": "02"
+      "id_familia": 7,
+      "nombre_familia": "PROCESADOR",
+      "num_familia": 2
     },
     {
-      "name": "PICADORA",
-      "numeroFamilia": "02"
+      "id_familia": 8,
+      "nombre_familia": "PICADORA",
+      "num_familia": 2
     },
     {
-      "name": "BATIDORA PEDESTAL",
-      "numeroFamilia": "03"
+      "id_familia": 9,
+      "nombre_familia": "BATIDORA PEDESTAL",
+      "num_familia": 3
     },
     {
-      "name": "BATIDORA FUENTE DE SODA",
-      "numeroFamilia": "03"
+      "id_familia": 10,
+      "nombre_familia": "BATIDORA FUENTE DE SODA",
+      "num_familia": 3
     },
     {
-      "name": "MULTIPRACTICOS",
-      "numeroFamilia": "04"
+      "id_familia": 11,
+      "nombre_familia": "MULTIPRACTICOS",
+      "num_familia": 4
     },
     {
-      "name": "EXCLUSIVOS COPPEL.COM",
-      "numeroFamilia": "07"
+      "id_familia": 12,
+      "nombre_familia": "EXCLUSIVOS COPPEL.COM",
+      "num_familia": 7
     },
     {
-      "name": "CAFETERAS",
-      "numeroFamilia": "01"
+      "id_familia": 13,
+      "nombre_familia": "CAFETERAS",
+      "num_familia": 1
     },
     {
-      "name": "PERCOLADORAS",
-      "numeroFamilia": "02"
+      "id_familia": 14,
+      "nombre_familia": "PERCOLADORAS",
+      "num_familia": 2
     },
     {
-      "name": "AMPLIFICADOR/RECEPTOR",
-      "numeroFamilia": "03"
+      "id_familia": 15,
+      "nombre_familia": "AMPLIFICADOR/RECEPTOR",
+      "num_familia": 3
     },
     {
-      "name": "KIT DE INSTALACION",
-      "numeroFamilia": "04"
+      "id_familia": 16,
+      "nombre_familia": "KIT DE INSTALACION",
+      "num_familia": 4
     },
     {
-      "name": "AMPLIFICADORES COPPEL",
-      "numeroFamilia": "05"
+      "id_familia": 17,
+      "nombre_familia": "AMPLIFICADORES COPPEL",
+      "num_familia": 5
     },
     {
-      "name": "AUTOSTEREO CD C/BOCINA",
-      "numeroFamilia": "06"
+      "id_familia": 18,
+      "nombre_familia": "AUTOSTEREO CD C/BOCINA",
+      "num_familia": 6
     },
     {
-      "name": "ACCESORIOS CAR AUDIO",
-      "numeroFamilia": "07"
+      "id_familia": 19,
+      "nombre_familia": "ACCESORIOS CAR AUDIO",
+      "num_familia": 7
     },
     {
-      "name": "AMPLIFICADOR",
-      "numeroFamilia": "03"
+      "id_familia": 20,
+      "nombre_familia": "AMPLIFICADOR",
+      "num_familia": 3
     },
     {
-      "name": "ALARMA AUTO/CASA/OFICINA",
-      "numeroFamilia": "04"
+      "id_familia": 21,
+      "nombre_familia": "ALARMA AUTO/CASA/OFICINA",
+      "num_familia": 4
     },
     {
-      "name": "SIN MECANISMO",
-      "numeroFamilia": "05"
+      "id_familia": 22,
+      "nombre_familia": "SIN MECANISMO",
+      "num_familia": 5
     },
     {
-      "name": "CON CD",
-      "numeroFamilia": "06"
+      "id_familia": 23,
+      "nombre_familia": "CON CD",
+      "num_familia": 6
     },
     {
-      "name": "MULTIMEDIA",
-      "numeroFamilia": "07"
+      "id_familia": 24,
+      "nombre_familia": "MULTIMEDIA",
+      "num_familia": 7
     },
     {
-      "name": "PAQUETE SIN MECANISMO",
-      "numeroFamilia": "08"
+      "id_familia": 25,
+      "nombre_familia": "PAQUETE SIN MECANISMO",
+      "num_familia": 8
     },
     {
-      "name": "PAQUETE CON CD",
-      "numeroFamilia": "09"
+      "id_familia": 26,
+      "nombre_familia": "PAQUETE CON CD",
+      "num_familia": 9
     },
     {
-      "name": "PILLOW TOP KS",
-      "numeroFamilia": "01"
+      "id_familia": 27,
+      "nombre_familia": "PILLOW TOP KS",
+      "num_familia": 1
     },
     {
-      "name": "PILLOW TOP DOBLE KS",
-      "numeroFamilia": "02"
+      "id_familia": 28,
+      "nombre_familia": "PILLOW TOP DOBLE KS",
+      "num_familia": 2
     },
     {
-      "name": "HULE ESPUMA KS",
-      "numeroFamilia": "03"
+      "id_familia": 29,
+      "nombre_familia": "HULE ESPUMA KS",
+      "num_familia": 3
     },
     {
-      "name": "ESTANDAR INDIVIDUAL",
-      "numeroFamilia": "01"
+      "id_familia": 30,
+      "nombre_familia": "ESTANDAR INDIVIDUAL",
+      "num_familia": 1
     },
     {
-      "name": "PILLOW TOP INDIVIDUAL",
-      "numeroFamilia": "02"
+      "id_familia": 31,
+      "nombre_familia": "PILLOW TOP INDIVIDUAL",
+      "num_familia": 2
     },
     {
-      "name": "PILLOW TOP DOBLE INDIVIDUAL",
-      "numeroFamilia": "03"
+      "id_familia": 32,
+      "nombre_familia": "PILLOW TOP DOBLE INDIVIDUAL",
+      "num_familia": 3
     },
     {
-      "name": "ESQUINERAS SUPERIORES",
-      "numeroFamilia": "01"
+      "id_familia": 33,
+      "nombre_familia": "ESQUINERAS SUPERIORES",
+      "num_familia": 1
     },
     {
-      "name": "TIPO L SECCIONAL",
-      "numeroFamilia": "02"
+      "id_familia": 34,
+      "nombre_familia": "TIPO L SECCIONAL",
+      "num_familia": 2
     },
     {
-      "name": "SILLON OCASIONAL",
-      "numeroFamilia": "03"
+      "id_familia": 35,
+      "nombre_familia": "SILLON OCASIONAL",
+      "num_familia": 3
     },
     {
-      "name": "PUFF",
-      "numeroFamilia": "01"
+      "id_familia": 36,
+      "nombre_familia": "PUFF",
+      "num_familia": 1
     },
     {
-      "name": "BAUL",
-      "numeroFamilia": "02"
+      "id_familia": 37,
+      "nombre_familia": "BAUL",
+      "num_familia": 2
     },
     {
-      "name": "TABURETE",
-      "numeroFamilia": "03"
+      "id_familia": 38,
+      "nombre_familia": "TABURETE",
+      "num_familia": 3
     },
     {
-      "name": "SOFA CAMA TAPIZADO COPPEL",
-      "numeroFamilia": "01"
+      "id_familia": 39,
+      "nombre_familia": "SOFA CAMA TAPIZADO COPPEL",
+      "num_familia": 1
     },
     {
-      "name": "SOFACAMA CLASICO",
-      "numeroFamilia": "02"
+      "id_familia": 40,
+      "nombre_familia": "SOFACAMA CLASICO",
+      "num_familia": 2
     },
     {
-      "name": "ESTUDIO",
-      "numeroFamilia": "03"
+      "id_familia": 41,
+      "nombre_familia": "ESTUDIO",
+      "num_familia": 3
     }
   ]
 }

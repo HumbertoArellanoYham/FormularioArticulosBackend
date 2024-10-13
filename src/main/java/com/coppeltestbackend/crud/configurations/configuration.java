@@ -49,7 +49,7 @@ public class configuration implements WebMvcConfigurer{
        };
      }
 
-     @Bean
+     @Bean(value = "Singleton")
      public MultiplesFamilias multiplesFamilias(){
         return new MultiplesFamilias();
      }

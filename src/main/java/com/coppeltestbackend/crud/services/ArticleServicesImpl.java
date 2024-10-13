@@ -2,6 +2,7 @@ package com.coppeltestbackend.crud.services;
 
 import com.coppeltestbackend.crud.models.Article;
 import com.coppeltestbackend.crud.repositories.ArticleRepository;
+import com.coppeltestbackend.crud.services.interfaces.ArticleInterface;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -12,7 +13,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class ArticleServicesImpl implements ArticleServices<Article> {
+public class ArticleServicesImpl implements ArticleInterface<Article> {
 
     private final ArticleRepository articleRepository;
 

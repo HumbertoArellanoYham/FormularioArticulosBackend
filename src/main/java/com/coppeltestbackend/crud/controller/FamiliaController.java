@@ -1,4 +1,4 @@
-package com.coppeltestbackend.crud.components;
+package com.coppeltestbackend.crud.controller;
 
 import com.coppeltestbackend.crud.models.MultiplesFamilias;
 import com.coppeltestbackend.crud.services.FamiliaServicesImpl;
@@ -14,14 +14,15 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/familia")
-public class FamiliaComponent {
+public class FamiliaController {
 
     private final FamiliaServicesImpl familiaServicesImpl;
 
     @Autowired
     private MultiplesFamilias multiplesFamilias;
 
-    public FamiliaComponent(FamiliaServicesImpl familiaServices){
+    @Autowired
+    public FamiliaController(FamiliaServicesImpl familiaServices){
         this.familiaServicesImpl = familiaServices;
     }
 
@@ -29,7 +30,7 @@ public class FamiliaComponent {
     public MultiplesFamilias findAllFamilias(){
         multiplesFamilias = new MultiplesFamilias();
 
-        familiaServicesImpl.findAll().forEach(multiplesFamilias::append); 
+        familiaServicesImpl.findAll().forEach(multiplesFamilias::append);
 
         return multiplesFamilias;
     }
@@ -40,13 +41,11 @@ public class FamiliaComponent {
     }
     
     private ResponseEntity<?> checkFunctionSaveAdd(MultiplesFamilias familias){
-        if(familias.getFamilias().size() == 0 || familias == null){  
+        if(familias.getFamilias().isEmpty()){
             return ResponseEntity.badRequest().build();
         }
 
-        familias.getFamilias().forEach(fam -> {
-                familiaServicesImpl.save(fam);
-        });
+        familias.getFamilias().forEach(familiaServicesImpl::save);
 
         return ResponseEntity.ok().build();
     }
