@@ -13,7 +13,7 @@ import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
-import com.coppeltestbackend.crud.models.MultiplesFamilias;
+import com.coppeltestbackend.crud.models.components.MultiplesFamilias;
 
 @Configuration
 @EnableWebMvc

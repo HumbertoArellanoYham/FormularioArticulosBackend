@@ -1,7 +1,8 @@
-package com.coppeltestbackend.crud.models;
+package com.coppeltestbackend.crud.models.components;
 
 import java.util.List;
 
+import com.coppeltestbackend.crud.models.Familia;
 import org.springframework.stereotype.Component;
 
 import java.io.Serializable;

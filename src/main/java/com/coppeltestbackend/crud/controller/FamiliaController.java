@@ -1,6 +1,6 @@
 package com.coppeltestbackend.crud.controller;
 
-import com.coppeltestbackend.crud.models.MultiplesFamilias;
+import com.coppeltestbackend.crud.models.components.MultiplesFamilias;
 import com.coppeltestbackend.crud.services.FamiliaServicesImpl;
 
 
