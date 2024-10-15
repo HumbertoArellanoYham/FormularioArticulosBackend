@@ -13,16 +13,27 @@ public class Article {
     @Column(name="sku")
     private Integer sku;
 
+    @Column
     private String nombre;
+    @Column
     private String marca;
+    @Column
     private String modelo;
+    @Column
     private String departamento;
+    @Column
     private String clase;
+    @Column
     private String familia;
+    @Column
     private Date fecha_alta;
+    @Column
     private Integer stock;
+    @Column
     private Integer cantidad;
+    @Column
     private Integer descontinuado;
+    @Column
     private Date fecha_baja;
 
     public Article(){}

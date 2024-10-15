@@ -4,6 +4,7 @@ package com.coppeltestbackend.crud.models;
 import java.io.Serializable;
 
 import jakarta.persistence.*;
+import org.springframework.data.redis.core.RedisHash;
 
 
 @Entity
@@ -19,8 +20,10 @@ public class Familia implements Serializable {
     @Column(name = "num_clase")
     private Integer numClase;
 
+    @Column
     private String nombre_familia;
 
+    @Column
     private Integer num_familia;
 
     @Column(name = "num_departamento")
