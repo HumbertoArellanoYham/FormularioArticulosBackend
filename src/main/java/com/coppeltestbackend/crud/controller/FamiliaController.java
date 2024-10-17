@@ -1,32 +1,33 @@
 package com.coppeltestbackend.crud.controller;
 
+import com.coppeltestbackend.crud.models.Familia;
 import com.coppeltestbackend.crud.models.components.MultiplesFamilias;
-import com.coppeltestbackend.crud.services.FamiliaServicesImpl;
-
+import com.coppeltestbackend.crud.services.FamiliaServices;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/familia")
 public class FamiliaController {
-
-    private final FamiliaServicesImpl familiaServicesImpl;
-
+    private final FamiliaServices familiaServicesImpl;
     @Autowired
     private MultiplesFamilias multiplesFamilias;
 
     @Autowired
-    public FamiliaController(FamiliaServicesImpl familiaServices){
+    public FamiliaController(FamiliaServices familiaServices){
         this.familiaServicesImpl = familiaServices;
     }
 
-    @GetMapping("/findAllFamilias")
+    @GetMapping(value = "/findFamilies", params = {"departamento", "clase"})
+    public List<Familia> findFamilies(@RequestParam(value = "departamento") String departamento, @RequestParam(value = "clase") String clase){
+        return familiaServicesImpl.findAllFamilies(departamento, clase);
+    }
+
+    @GetMapping(value = "/findAllFamilias")
     public MultiplesFamilias findAllFamilias(){
         multiplesFamilias = new MultiplesFamilias();
 

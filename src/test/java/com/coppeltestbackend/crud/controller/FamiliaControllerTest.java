@@ -22,7 +22,7 @@ class FamiliaControllerTest {
     void familiaTest() throws Exception {
         String file = new String(Files.readAllBytes(Paths.get("src/main/resources/JsonFormat/familias.json")));
 
-        assertThat(this.restTemplate.getForObject("http://127.0.0.1:"+ port +"/familia/findAllFamilias",
+        assertThat(this.restTemplate.getForObject("http://localhost:"+ port +"/familia/findAllFamilias",
                 String.class)).contains(file);
     }
 }
