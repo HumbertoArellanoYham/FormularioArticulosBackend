@@ -1,20 +1,20 @@
 package com.coppeltestbackend.crud.models;
 
 
+import java.io.Serial;
 import java.io.Serializable;
 
 import jakarta.persistence.*;
-import org.springframework.data.redis.core.RedisHash;
-
 
 @Entity
 @Table(name = "familia")
 public class Familia implements Serializable {
 
+    @Serial
     private static final long serialVersionUID = -8885817712041252438L;
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id_familia")
     private Integer id_familia;
 
     @Column(name = "num_clase")

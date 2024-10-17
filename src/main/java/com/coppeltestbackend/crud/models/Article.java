@@ -2,12 +2,16 @@ package com.coppeltestbackend.crud.models;
 
 import jakarta.persistence.*;
 
+import java.io.Serial;
+import java.io.Serializable;
 import java.util.Date;
 
 @Entity
 @Table(name = "articulo")
 @Access(value = AccessType.FIELD)
-public class Article {
+public class Article implements Serializable {
+    @Serial
+    private static final long serialVersionUID = -8885817712041252438L;
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     @Column(name="sku")
@@ -29,7 +33,7 @@ public class Article {
     private Date fecha_alta;
     @Column
     private Integer stock;
-    @Column
+    @Column(name = "cantidad")
     private Integer cantidad;
     @Column
     private Integer descontinuado;

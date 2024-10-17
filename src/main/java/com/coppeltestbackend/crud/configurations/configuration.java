@@ -43,6 +43,8 @@ public class configuration implements WebMvcConfigurer{
             .cacheDefaults(cacheConfig)
             .withCacheConfiguration("familias", myDefaultCacheConfig(Duration.ofMinutes(5)))
             .withCacheConfiguration("familia", myDefaultCacheConfig(Duration.ofMinutes(1)))
+                .withCacheConfiguration("findAll", myDefaultCacheConfig(Duration.ofMinutes(1)))
+                .withCacheConfiguration("findBySku", myDefaultCacheConfig(Duration.ofMinutes(1)))
             .build();
     }
 

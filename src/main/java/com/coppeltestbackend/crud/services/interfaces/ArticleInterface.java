@@ -11,13 +11,9 @@ public interface ArticleInterface<T> {
 
      Optional<T> findBySku(Integer sku);
 
-     T save(T t);
+     void save(T t);
+
+     void update (T t);
 
      void remove(Integer sku);
-
-     List<String> departamento();
-
-     List<String> clase(String departamento);
-
-     List<String> familia(String clase);
 }
